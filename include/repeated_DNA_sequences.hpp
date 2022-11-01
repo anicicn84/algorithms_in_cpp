@@ -127,7 +127,11 @@ namespace find_repeated_dna_sequences
             numbers.push_back(mapping[s[i]]);
         }
         int hashing = 0;
+
+        // store the hash of each substring here:
         std::set<int> substringHashes{};
+
+        // store the final result/output here:
         std::set<std::string> output{};
 
         // iterate over all window-sized substrings
